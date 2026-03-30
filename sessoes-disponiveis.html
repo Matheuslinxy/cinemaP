@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineTech - Sessões Disponíveis</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a href="./index.html" class="navbar-brand">
+                <img src="./img/school.svg" alt="Logo CineTech" width="30" height="24" class="d-inline-block align-text-top">
+                CineTech
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="./filmes.html" class="nav-link">Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./salas.html" class="nav-link">Salas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./sessoes.html" class="nav-link">Sessões</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./ingressos.html" class="nav-link">Ingressos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./sessoes-disponiveis.html" class="nav-link active">Sessões Disponíveis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <h2 class="mb-4">Sessões Disponíveis</h2>
+        <hr>
+
+        <div class="row g-4" id="listaSessoesDisponiveis"></div>
+    </main>
+
+
+    <script src="./js/sessoes-disponiveis.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

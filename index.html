@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineTech - Início</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <a href="./index.html" class="navbar-brand">
+                <img src="./img/school.svg" alt="CineTech" width="30" height="24" class="d-inline-block align-text-top">
+                CineTech
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="./filmes.html" class="nav-link">Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./salas.html" class="nav-link">Salas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Sessoes.html" class="nav-link">Sessões</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./ingressos.html" class="nav-link">Ingressos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./sessoes.html" class="nav-link">Sessões Disponíveis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+
+        <!-- BANNER PRINCIPAL -->
+       <section class="hero-section mb-5">
+    <div class="hero-container position-relative overflow-hidden rounded-4 shadow-lg">
+        
+        <img src="./img/banner-cinema.jpg" alt="Banner do CineTech" class="hero-img img-fluid w-100">
+
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-center">
+            <div class="hero-overlay-content px-4">
+                <h1 class="display-4 fw-bold mb-3">Bem-vindo ao CineTech</h1>
+                <p class="lead mb-4">
+                    Sua experiência de gerenciamento de cinema começa aqui.
+                    Cadastre filmes, organize salas, crie sessões e controle a venda de ingressos com praticidade.
+                </p>
+                <a href="./filmes.html" class="btn btn-dark btn-lg">Começar Agora</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- CARDS -->
+        <section>
+            <div class="row g-4 mt-2">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/filmes.jpg" class="card-img-top" alt="Cadastro de Filmes">
+                        <div class="card-body">
+                            <h5 class="card-title">Cadastro de Filmes</h5>
+                            <p class="card-text">Cadastre os filmes que estarão em cartaz no cinema com informações completas.</p>
+                            <a href="./filmes.html" class="btn btn-dark">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/salas.jpg" class="card-img-top" alt="Cadastro de Salas">
+                        <div class="card-body">
+                            <h5 class="card-title">Cadastro de Salas</h5>
+                            <p class="card-text">Registre as salas disponíveis, capacidade de lugares e tipo de exibição.</p>
+                            <a href="./salas.html" class="btn btn-dark">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/sessoes.jpg" class="card-img-top" alt="Cadastro de Sessões">
+                        <div class="card-body">
+                            <h5 class="card-title">Cadastro de Sessões</h5>
+                            <p class="card-text">Crie sessões vinculando filme, sala, data, horário, idioma e formato.</p>
+                            <a href="./Sessoes.html" class="btn btn-dark">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/ingressos.jpg" class="card-img-top" alt="Venda de Ingressos">
+                        <div class="card-body">
+                            <h5 class="card-title">Venda de Ingressos</h5>
+                            <p class="card-text">Realize a venda de ingressos para os clientes com assento e forma de pagamento.</p>
+                            <a href="./ingressos.html" class="btn btn-dark">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/disponiveis.jpg" class="card-img-top" alt="Sessões Disponíveis">
+                        <div class="card-body">
+                            <h5 class="card-title">Sessões Disponíveis</h5>
+                            <p class="card-text">Visualize rapidamente todas as sessões disponíveis no sistema.</p>
+                            <a href="./sessoes.html" class="btn btn-dark">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+/* ===================================
+   ESTILO GERAL DO SITE - TEMA CINEMA
+=================================== */
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #2b0000);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* ===================================
+   NAVBAR
+=================================== */
+.navbar {
+    background: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    padding: 12px 20px;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #0000F5 !important;
+    letter-spacing: 1px;
+}
+
+.navbar-brand img {
+    margin-right: 8px;
+}
+
+.nav-link {
+    color: #f8f9fa !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #2854C5 !important;
+}
+
+/* ===================================
+   TÍTULOS E TEXTOS
+=================================== */
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    color: #ffc107;
+}
+
+p {
+    color: #e9ecef;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    opacity: 1;
+}
+
+/* ===================================
+   CONTEÚDO PRINCIPAL
+=================================== */
+main.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* ===================================
+   HERO DA INDEX
+=================================== */
+.display-4 {
+    color: #ffc107;
+    text-shadow: 2px 2px 12px rgba(255, 193, 7, 0.2);
+}
+
+.lead {
+    font-size: 1.15rem;
+    color: #ced4da;
+}
+
+/* ===================================
+   CARDS
+=================================== */
+.card {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(20, 20, 20, 0.95);
+    color: #fff;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(24, 6, 144, 0.25);
+    border-color: rgba(12, 6, 189, 0.35);
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #2854C5 ;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #dee2e6;
+}
+
+/* Cards de formulário */
+.card.shadow-sm {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* ===================================
+   BOTÕES
+=================================== */
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 10px 18px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.04);
+}
+
+.btn-dark {
+    background: linear-gradient(135deg, #2854C5, #8b0000);
+    border: none;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background: linear-gradient(135deg, #2854C5, #0000F5);
+}
+
+.btn-danger {
+    border: none;
+    background: linear-gradient(135deg, #0000F5, #b30000);
+}
+
+/* ===================================
+   FORMULÁRIOS
+=================================== */
+form label {
+    font-weight: 600;
+    color: #2854C5 ;
+}
+
+.form-control,
+.form-select,
+textarea {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.form-control::placeholder,
+textarea::placeholder {
+    color: #adb5bd;
+}
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+    border-color: #2854C5 ;
+    box-shadow: 0 0 0 0.15rem rgba(220, 53, 69, 0.25);
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+/* Corrige opções do select */
+option {
+    color: #000;
+}
+
+/* ===================================
+   TEXTOS SECUNDÁRIOS
+=================================== */
+.text-muted {
+    color: #adb5bd !important;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* ===================================
+   ESPAÇAMENTOS
+=================================== */
+.row.g-4 {
+    margin-top: 10px;
+}
+
+/* ===================================
+   RODAPÉ (caso queira depois)
+=================================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #adb5bd;
+}
+
+/* ===================================
+   RESPONSIVIDADE
+=================================== */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
+/* ===================================
+   HERO / BANNER DA HOME COM IMG NO HTML
+=================================== */
+.hero-container {
+    height: 450px;
+    border: 1px solid rgba(255, 193, 7, 0.15);
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(45%);
+}
+
+.hero-overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(80, 0, 0, 0.45));
+}
+
+.hero-overlay-content {
+    max-width: 850px;
+    color: #fff;
+}
+
+.hero-overlay-content h1 {
+    color: #2854C5;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
+}
+
+.hero-overlay-content p {
+    color: #f8f9fa;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* ===================================
+   ANIMAÇÃO DO BANNER
+=================================== */
+.hero-section {
+    animation: fadeCinema 1s ease-in-out;
+}
+
+@keyframes fadeCinema {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===================================
+   IMAGENS DOS CARDS
+=================================== */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===================================
+   MELHORIA VISUAL DA HOME
+=================================== */
+.hero-section {
+    animation: fadeCinema 1s ease-in-out;
+}
+
+@keyframes fadeCinema {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

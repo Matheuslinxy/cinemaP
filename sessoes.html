@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineTech - Cadastro de Sessões</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <a href="./index.html" class="navbar-brand">
+                <img src="./img/school.svg" alt="Logo CineTech" width="30" height="24" class="d-inline-block align-text-top">
+                CineTech
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="./filmes.html" class="nav-link">Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./salas.html" class="nav-link">Salas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./sessoes.html" class="nav-link active">Sessões</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./ingressos.html" class="nav-link">Ingressos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./sessoes-disponiveis.html" class="nav-link">Sessões Disponíveis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <h2 class="mb-4">Cadastro de Sessões</h2>
+        <hr>
+
+        <div class="card shadow-sm mb-5">
+            <div class="card-body">
+                <form id="formSessao">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="filme" class="form-label">Filme</label>
+                            <select class="form-select" id="filme" required>
+                                <option value="">Selecione um filme</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="sala" class="form-label">Sala</label>
+                            <select class="form-select" id="sala" required>
+                                <option value="">Selecione uma sala</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="dataHora" class="form-label">Data e Hora</label>
+                            <input type="datetime-local" class="form-control" id="dataHora" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="preco" class="form-label">Preço (R$)</label>
+                            <input type="number" class="form-control" id="preco" step="0.01" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="idioma" class="form-label">Idioma</label>
+                            <select class="form-select" id="idioma" required>
+                                <option value="">Selecione</option>
+                                <option value="Dublado">Dublado</option>
+                                <option value="Legendado">Legendado</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="formato" class="form-label">Formato</label>
+                            <select class="form-select" id="formato" required>
+                                <option value="">Selecione</option>
+                                <option value="2D">2D</option>
+                                <option value="3D">3D</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-dark">Salvar Sessão</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <h3 class="mb-3">Sessões Cadastradas</h3>
+        <div class="row g-4" id="listaSessoes"></div>
+    </main>
+
+    
+    <script src="./js/sessoes.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
