@@ -25,6 +25,17 @@ function carregarSessoes() {
             </option>
         `;
     });
+
+    selecionarSessaoDaURL();
+}
+
+function selecionarSessaoDaURL() {
+    const params = new URLSearchParams(window.location.search);
+    const sessaoIndex = params.get("sessao");
+
+    if (sessaoIndex !== null) {
+        selectSessao.value = sessaoIndex;
+    }
 }
 
 function renderizarIngressos() {
@@ -67,6 +78,11 @@ formIngresso.addEventListener("submit", function(event) {
     const sessoes = obterSessoes();
     const indiceSessao = selectSessao.value;
 
+    if (indiceSessao === "") {
+        alert("Selecione uma sessão.");
+        return;
+    }
+
     const novoIngresso = {
         sessao: `${sessoes[indiceSessao].filme} - ${sessoes[indiceSessao].sala} - ${sessoes[indiceSessao].dataHora}`,
         cliente: document.getElementById("cliente").value,
@@ -80,8 +96,11 @@ formIngresso.addEventListener("submit", function(event) {
     salvarIngressos(ingressos);
 
     formIngresso.reset();
+    carregarSessoes();
     renderizarIngressos();
-});
+}
+
+);
 
 carregarSessoes();
 renderizarIngressos();
